@@ -33,8 +33,8 @@ export const profile = {
 export const socials = {
   linkedin: "https://www.linkedin.com/in/shlokagrawal/", // PLACEHOLDER — confirm exact URL
   github: "https://github.com/shloki-loki",
-  twitter: "", // PLACEHOLDER — add your X/Twitter URL
-  peerlist: "", // PLACEHOLDER — add your Peerlist URL
+  twitter: "https://x.com/bisleri_boi",
+  peerlist: "https://peerlist.io/111shlokagrawal",
   email: "mailto:111shlokagrawal@gmail.com",
 };
 
@@ -75,26 +75,30 @@ export type Experience = {
   role: string;
   period: string;
   location: string;
-  description: string;
+  bullets: string[];
 };
 
-// PLACEHOLDER experience — replace dates/descriptions with real ones.
 export const experience: Experience[] = [
   {
     company: "Ola",
     role: "Founder's Office",
-    period: "20XX – 20XX", // PLACEHOLDER — send real dates
-    location: "Bengaluru, India", // PLACEHOLDER
-    description:
-      "Placeholder description of your Founder's Office work at Ola — what you drove and the impact. Replace with the real story.",
+    period: "Jun 2025 – Jul 2026",
+    location: "Bengaluru, India",
+    bullets: [
+      "Owned ~$20M of inventory and end-to-end production planning as the core mandate.",
+      "Partnered directly with the CEO and COO across backend and frontend operations — logistics planning, supply-chain management and inventory calibration.",
+      "Drove new cross-functional initiatives with multiple stakeholder teams, including the launch of the Ola 4680 cell and Ola BESS (Shakti).",
+    ],
   },
   {
     company: "InsuranceDekho",
-    role: "Business / Growth (update title)",
-    period: "20XX – 20XX", // PLACEHOLDER
-    location: "Gurugram, India", // PLACEHOLDER
-    description:
-      "Placeholder description of your work at InsuranceDekho — what you owned and the results. Replace with the real story.",
+    role: "Automation Intern", // confirm exact title
+    period: "May 2024 – Jul 2024",
+    location: "Gurugram, India", // PLACEHOLDER — confirm
+    bullets: [
+      "Automated recurring manual workflows by integrating RESTful APIs and building custom Google Chrome extensions.",
+      "Cut roughly 30 minutes of manual effort per instance.",
+    ],
   },
 ];
 
@@ -102,6 +106,7 @@ export type Project = {
   name: string;
   description: string;
   link?: string;
+  image?: string; // drop the screenshot in /public and reference it here
   tags: string[];
 };
 
@@ -110,7 +115,8 @@ export const projects: Project[] = [
     name: "MirrorBot",
     description:
       "A Lichess bot that mirrors an opponent's accuracy and steers games toward draws — an experiment in playing 'just as well as you do, no better.'",
-    link: "", // PLACEHOLDER — add repo/live link
+    link: "https://lichess.org/@/MirroringPeep", // PLACEHOLDER — confirm/replace
+    image: "/project-mirrorbot.png",
     tags: ["Python", "Chess", "Lichess API"],
   },
   {
@@ -118,6 +124,7 @@ export const projects: Project[] = [
     description:
       "An 8-board Octordle race pitting Claude, GPT and Gemini against a human — a playground for comparing how different AI agents reason.",
     link: "https://github.com/shloki-loki/octawordle",
+    image: "/project-octawordle.png",
     tags: ["AI Agents", "TypeScript", "Game"],
   },
 ];

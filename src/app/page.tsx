@@ -5,6 +5,7 @@ import RotatingRole from "@/components/RotatingRole";
 import StatusCards from "@/components/StatusCards";
 import TechStack from "@/components/TechStack";
 import ViewerCount from "@/components/ViewerCount";
+import ProjectImage from "@/components/ProjectImage";
 
 export default function HomePage() {
   return (
@@ -65,9 +66,18 @@ export default function HomePage() {
                 </span>
               </div>
               <p className="mt-0.5 text-sm font-medium text-pine">{job.role}</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                {job.description}
-              </p>
+              <p className="text-xs text-muted">{job.location}</p>
+              <ul className="mt-3 space-y-1.5">
+                {job.bullets.map((point, i) => (
+                  <li
+                    key={i}
+                    className="flex gap-2 text-sm leading-relaxed text-muted"
+                  >
+                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-moss" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ol>
@@ -92,6 +102,9 @@ export default function HomePage() {
               key={project.name}
               className="flex flex-col rounded-2xl border border-line bg-card p-5 transition-colors hover:border-moss"
             >
+              {project.image && (
+                <ProjectImage src={project.image} alt={`${project.name} screenshot`} />
+              )}
               <h3 className="text-base font-semibold text-ink">
                 {project.name}
               </h3>
@@ -123,19 +136,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---------- Quote + viewer count ---------- */}
-      <section className="mt-14 grid gap-4 sm:grid-cols-[1fr_auto] sm:items-stretch">
-        <figure className="rounded-2xl border border-line bg-card p-6">
-          <blockquote className="text-lg leading-relaxed text-ink">
-            <span className="mr-1 font-serif text-2xl text-moss">“</span>
-            {quote.text}
-          </blockquote>
-          <figcaption className="mt-3 text-sm text-muted">
-            — {quote.author}
-          </figcaption>
-        </figure>
-        <div className="flex sm:w-48">
-          <div className="flex w-full items-center justify-center">
+      {/* ---------- Quote + viewer count (single divided card) ---------- */}
+      <section className="mt-14">
+        <div className="grid overflow-hidden rounded-2xl border border-line bg-card sm:grid-cols-[1.6fr_1fr]">
+          <figure className="p-6 sm:p-7">
+            <span className="font-serif text-3xl leading-none text-moss">“</span>
+            <blockquote className="mt-2 text-lg leading-relaxed text-ink">
+              {quote.text}
+            </blockquote>
+            <figcaption className="mt-3 text-right text-sm text-muted">
+              — {quote.author}
+            </figcaption>
+          </figure>
+          <div className="flex items-center justify-center border-t border-line p-6 sm:border-l sm:border-t-0">
             <ViewerCount />
           </div>
         </div>

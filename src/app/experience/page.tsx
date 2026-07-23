@@ -12,11 +12,6 @@ export default function ExperiencePage() {
       <h1 className="mt-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
         Where I&apos;ve worked
       </h1>
-      <p className="mt-3 text-sm text-muted">
-        Placeholder roles below — send me the real titles, dates and details and
-        I&apos;ll update them.
-      </p>
-
       <ol className="mt-8 space-y-4">
         {experience.map((job) => (
           <li
@@ -29,9 +24,17 @@ export default function ExperiencePage() {
             </div>
             <p className="mt-0.5 text-sm font-medium text-pine">{job.role}</p>
             <p className="mt-1 text-xs text-muted">{job.location}</p>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              {job.description}
-            </p>
+            <ul className="mt-3 space-y-1.5">
+              {job.bullets.map((point, i) => (
+                <li
+                  key={i}
+                  className="flex gap-2 text-sm leading-relaxed text-muted"
+                >
+                  <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-moss" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
           </li>
         ))}
       </ol>

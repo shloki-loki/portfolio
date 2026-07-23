@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { projects, profile } from "@/lib/content";
+import ProjectImage from "@/components/ProjectImage";
 
 export const metadata: Metadata = { title: `Projects — ${profile.name}` };
 
@@ -22,6 +23,9 @@ export default function ProjectsPage() {
             key={project.name}
             className="flex flex-col rounded-2xl border border-line bg-card p-5 transition-colors hover:border-moss"
           >
+            {project.image && (
+              <ProjectImage src={project.image} alt={`${project.name} screenshot`} />
+            )}
             <h2 className="text-lg font-semibold text-ink">{project.name}</h2>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
               {project.description}

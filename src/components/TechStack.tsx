@@ -43,26 +43,28 @@ export default function TechStack() {
       <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
         Tech Stack
       </h2>
-      <div className="mt-4 grid grid-cols-5 gap-3 sm:grid-cols-8 sm:gap-4">
+      <div className="mt-4 flex flex-wrap gap-2">
         {techStack.map(({ key, label }) => {
           const entry = ICONS[key];
           return (
-            <div
-              key={key}
-              title={label}
-              className="group flex aspect-square items-center justify-center rounded-xl border border-dashed border-line bg-card transition-colors hover:border-moss"
-            >
-              {entry ? (
-                <entry.Icon
-                  className="h-6 w-6 transition-transform group-hover:scale-110"
-                  style={{ color: entry.color }}
-                  aria-label={label}
-                />
-              ) : (
-                <span className="px-1 text-center text-[10px] font-medium text-muted">
-                  {label}
-                </span>
-              )}
+            <div key={key} className="group relative">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-line bg-card transition-colors hover:border-moss">
+                {entry ? (
+                  <entry.Icon
+                    className="h-4 w-4"
+                    style={{ color: entry.color }}
+                    aria-label={label}
+                  />
+                ) : (
+                  <span className="px-0.5 text-center text-[8px] font-medium text-muted">
+                    {label}
+                  </span>
+                )}
+              </div>
+              {/* hover tooltip, matching the social row */}
+              <span className="pointer-events-none absolute -top-9 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-md bg-ink px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity duration-150 group-hover:opacity-100">
+                {label}
+              </span>
             </div>
           );
         })}
