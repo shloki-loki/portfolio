@@ -10,14 +10,19 @@
 
 export const profile = {
   name: "Shlok Agrawal",
-  headline: "Vibe Coder & Business Enthusiast",
+  // Roles that flicker/rotate under your name on the home page.
+  roles: ["Vibe Coder", "Business Enthusiast", "AI Engineer"],
+  headline: "Vibe Coder & Business Enthusiast", // used for the browser tab / SEO
   // Short one-liner shown under the name on the home page.
   tagline:
     "Building playful products at the intersection of code and business. IIT Guwahati grad. Currently open to work.",
   email: "111shlokagrawal@gmail.com",
-  // Where the mini-me lives — you'll drop your Ghibli art here later.
-  // Put the file in /public and update the path (e.g. "/mini-me.png").
-  avatar: "", // empty = use the built-in placeholder face
+  // The mini-me art in the corner. Two LEGO poses:
+  //   avatar      = looking FORWARD (tracks the cursor)
+  //   avatarBoard = looking at the BOARD (shown briefly every ~15s)
+  // Drop the files in /public. If a file is missing, a placeholder face shows.
+  avatar: "/mini-me-forward.png",
+  avatarBoard: "/mini-me-board.png",
   location: "India", // PLACEHOLDER
   availability: "Open to work",
   // Drop your resume PDF into /public (e.g. /public/resume.pdf) and set this
@@ -26,11 +31,44 @@ export const profile = {
 };
 
 export const socials = {
+  linkedin: "https://www.linkedin.com/in/shlokagrawal/", // PLACEHOLDER — confirm exact URL
   github: "https://github.com/shloki-loki",
-  linkedin: "https://www.linkedin.com/in/shlokagrawal/", // PLACEHOLDER — confirm your exact URL
-  twitter: "", // PLACEHOLDER — add your X/Twitter URL or leave empty
+  twitter: "", // PLACEHOLDER — add your X/Twitter URL
+  peerlist: "", // PLACEHOLDER — add your Peerlist URL
   email: "mailto:111shlokagrawal@gmail.com",
 };
+
+// "Last played" card on the home page (static for now).
+export const nowPlaying = {
+  song: "The Less I Know the Better",
+  artist: "Tame Impala",
+  url: "https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ",
+};
+
+// Winston Churchill quote, matching the reference site.
+export const quote = {
+  text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+  author: "Winston Churchill",
+};
+
+/**
+ * TECH STACK — icon grid on the home page.
+ * Each entry's `key` maps to a brand icon in TechStack.tsx.
+ * Available keys: python, typescript, javascript, react, nextjs, tailwind,
+ * nodejs, git, github, vercel, openai, figma, postgres, mongodb, docker.
+ * Add/remove freely; unknown keys just show the label in a plain tile.
+ */
+export const techStack: { key: string; label: string }[] = [
+  { key: "python", label: "Python" },
+  { key: "typescript", label: "TypeScript" },
+  { key: "react", label: "React" },
+  { key: "nextjs", label: "Next.js" },
+  { key: "tailwind", label: "Tailwind" },
+  { key: "nodejs", label: "Node.js" },
+  { key: "git", label: "Git" },
+  { key: "vercel", label: "Vercel" },
+  { key: "openai", label: "AI / LLMs" },
+];
 
 export type Experience = {
   company: string;
@@ -44,11 +82,11 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     company: "Ola",
-    role: "Business / Product (update title)",
-    period: "20XX – 20XX", // PLACEHOLDER
+    role: "Founder's Office",
+    period: "20XX – 20XX", // PLACEHOLDER — send real dates
     location: "Bengaluru, India", // PLACEHOLDER
     description:
-      "Placeholder description of your work at Ola — key responsibilities and impact. Replace with the real story.",
+      "Placeholder description of your Founder's Office work at Ola — what you drove and the impact. Replace with the real story.",
   },
   {
     company: "InsuranceDekho",
@@ -67,13 +105,12 @@ export type Project = {
   tags: string[];
 };
 
-// PLACEHOLDER projects — seeded from what I know about you.
 export const projects: Project[] = [
   {
     name: "MirrorBot",
     description:
       "A Lichess bot that mirrors an opponent's accuracy and steers games toward draws — an experiment in playing 'just as well as you do, no better.'",
-    link: "", // add repo/live link when ready
+    link: "", // PLACEHOLDER — add repo/live link
     tags: ["Python", "Chess", "Lichess API"],
   },
   {
@@ -83,14 +120,4 @@ export const projects: Project[] = [
     link: "https://github.com/shloki-loki/octawordle",
     tags: ["AI Agents", "TypeScript", "Game"],
   },
-];
-
-// Skills / tools you like to reach for. Purely for the little chip row.
-export const skills: string[] = [
-  "Product",
-  "Growth",
-  "Vibe Coding",
-  "Next.js",
-  "Python",
-  "AI Agents",
 ];
