@@ -111,7 +111,7 @@ function LegoMiniMe() {
         <img
           src={profile.avatar}
           alt=""
-          className={`absolute inset-0 h-full w-full rounded-2xl object-contain drop-shadow-[0_8px_14px_rgba(28,43,37,0.22)] transition-opacity duration-500 ${
+          className={`absolute inset-0 h-full w-full rounded-2xl object-cover object-[50%_16%] drop-shadow-[0_8px_14px_rgba(28,43,37,0.22)] transition-opacity duration-500 ${
             glancing ? "opacity-0" : "opacity-100"
           }`}
         />
@@ -121,7 +121,7 @@ function LegoMiniMe() {
           <img
             src={profile.avatarBoard}
             alt=""
-            className={`absolute inset-0 h-full w-full rounded-2xl object-contain drop-shadow-[0_8px_14px_rgba(28,43,37,0.22)] transition-opacity duration-500 ${
+            className={`absolute inset-0 h-full w-full rounded-2xl object-cover object-[50%_16%] drop-shadow-[0_8px_14px_rgba(28,43,37,0.22)] transition-opacity duration-500 ${
               glancing ? "opacity-100" : "opacity-0"
             }`}
           />
