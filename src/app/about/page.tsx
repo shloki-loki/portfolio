@@ -27,11 +27,6 @@ export default function AboutPage() {
           tinkering with side projects and figuring out what I want to build
           next.
         </p>
-        <p className="rounded-xl border border-dashed border-line bg-card p-4 text-sm text-muted">
-          ✍️ This page is a placeholder. Share the bio you want here (your
-          story, what you love about the mountains, what you&apos;re looking for)
-          and I&apos;ll replace this text.
-        </p>
       </div>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2">

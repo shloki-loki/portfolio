@@ -27,7 +27,7 @@ export const profile = {
   availability: "Open to work",
   // Drop your resume PDF into /public (e.g. /public/resume.pdf) and set this
   // to "/resume.pdf". Leave empty to show the "coming soon" placeholder.
-  resumeUrl: "",
+  resumeUrl: "/resume.pdf",
 };
 
 export const socials = {
