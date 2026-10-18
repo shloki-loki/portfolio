@@ -9,7 +9,7 @@ The introduction and page structure live in `src/app/page.tsx`; styling lives in
 
 The former /about, /experience, /projects and /resume URLs redirect to /.
 Project links point to verified GitHub source repositories; no live demo is claimed.
-BuildX experience is pending the updated resume.
+Beltech experience is summarized from the updated resume.
 
 ## Develop
 
