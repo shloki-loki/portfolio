@@ -7,7 +7,7 @@ export const profile = {
 };
 
 export const socials = {
-  linkedin: "https://www.linkedin.com/in/shlokagrawal/", // PLACEHOLDER — confirm exact URL
+  linkedin: "https://www.linkedin.com/in/shlok-agrawal-iitg/",
   github: "https://github.com/shloki-loki",
   twitter: "https://x.com/bisleri_boi",
   peerlist: "https://peerlist.io/111shlokagrawal",
@@ -36,9 +36,9 @@ export const experience: Experience[] = [
   },
   {
     company: "InsuranceDekho",
-    role: "Automation Intern", // confirm exact title
+    role: "Technical Product Intern",
     period: "May 2024 – Jul 2024",
-    location: "Gurugram, India", // PLACEHOLDER — confirm
+    location: "Gurugram, India",
     bullets: [
       "Automated recurring manual workflows by integrating RESTful APIs and building custom Google Chrome extensions.",
       "Cut roughly 30 minutes of manual effort per instance.",
