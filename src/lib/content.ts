@@ -24,6 +24,16 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    company: "Beltech Artificial Intelligence",
+    role: "Founder’s Office – Business Strategy",
+    period: "Aug 2026 – Present",
+    location: "Bengaluru, India",
+    bullets: [
+      "Evaluated smart-traffic and surveillance tenders worth ₹80–800 crore, building qualification frameworks to guide bid and consortium decisions.",
+      "Launched two new revenue streams — GPU colocation and an insurance intelligence product — owning the business case and go-to-market strategy.",
+    ],
+  },
+  {
     company: "Ola",
     role: "Founder's Office",
     period: "Jun 2025 – Jul 2026",
