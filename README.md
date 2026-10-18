@@ -1,22 +1,22 @@
 # Shlok Agrawal — Portfolio
 
-Personal portfolio site. Vibe Coder & Business Enthusiast.
+A white, single-page portfolio built with Next.js and deployed on Vercel.
 
-Built with **Next.js 14** + **Tailwind CSS**, deployed on **Vercel**.
+## Editing
 
-## Editing content
+Experience, project links, and contact details live in `src/lib/content.ts`.
+The introduction and page structure live in `src/app/page.tsx`; styling lives in `src/app/globals.css`.
 
-All text lives in one file: [`src/lib/content.ts`](src/lib/content.ts) —
-profile, experience, projects, socials and resume link. Edit there and the
-whole site updates.
-
-- Mini-me art: drop an image in `/public` and set `profile.avatar`.
-- Resume: drop a PDF in `/public` and set `profile.resumeUrl`.
+The former /about, /experience, /projects and /resume URLs redirect to /.
+Project links point to verified GitHub source repositories; no live demo is claimed.
+BuildX experience is pending the updated resume.
 
 ## Develop
 
-```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
+```sh
+npm ci
+npm run dev
+npm run build
 ```
+
+Design references: https://paco.me/ and https://emilkowal.ski/.
