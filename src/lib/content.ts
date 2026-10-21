@@ -28,9 +28,9 @@ export const about = [
 
 export const highlights = [
   { value: "₹200 Cr", label: "inventory buffer built and owned at Ola Electric" },
-  { value: "14 days", label: "order-to-delivery, down from 32, via a lotting algorithm" },
-  { value: "40%", label: "working capital released through S&OP planning" },
   { value: "Expert", label: "on Codeforces, global rank 188 in Round 984" },
+  { value: "2000", label: "Chess.com rapid rating" },
+  { value: "AIR 2135", label: "JEE Advanced all-India rank" },
 ];
 
 export type Experience = {
