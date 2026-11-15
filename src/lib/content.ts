@@ -22,8 +22,8 @@ export const socials = {
 };
 
 export const about = [
-  "I’m an IIT Guwahati electrical engineer who ended up in the founder’s office. At **Ola Electric** I ran production planning and finished-goods inventory, working directly with the CEO and COO. Today I shape bid strategy and new revenue lines at **Beltech AI**, a smart-traffic and surveillance company.",
-  "I’m most useful where business problems meet code: I built a lotting algorithm, set up SAP MRP from scratch, and ship side projects with AI agents on weekends.",
+  "I’m an IIT Guwahati electrical engineer who ended up in the founder’s office. At **Ola Electric** I ran production planning and finished-goods inventory, working directly with the CEO and COO. Most recently I led bid strategy and new revenue lines at **Beltech AI**, a smart-traffic and surveillance company.",
+  "I’m most useful where business problems meet code: I built a lotting algorithm, set up SAP MRP from scratch, and build with AI agents, most recently a six-agent outreach system for a nonprofit.",
 ];
 
 export const highlights = [
@@ -47,17 +47,17 @@ export const experience: Experience[] = [
   {
     company: "Beltech Artificial Intelligence",
     role: "Founder’s Office – Business Strategy",
-    period: "Aug 2026 – Present",
+    period: "Aug 2026 – Sep 2026",
     location: "Bengaluru",
     summary: "Bid strategy and new revenue lines for a smart-traffic and surveillance company.",
     bullets: [
-      "Own the evaluation of central and state smart-traffic and surveillance tenders worth **₹80–800 Cr**, building the qualification framework and credentials repository behind every bid/no-bid and consortium call.",
-      "Launched **2 new revenue streams** beyond core government contracts: GPU colocation, and an insurance intelligence product that turns vehicle and violation data into automated leads. I own the business case and GTM for both.",
+      "Owned the evaluation of central and state smart-traffic and surveillance tenders worth **₹80–800 Cr**, building the qualification framework and credentials repository behind every bid/no-bid and consortium call.",
+      "Launched **2 new revenue streams** beyond core government contracts: GPU colocation, and an insurance intelligence product that turns vehicle and violation data into automated leads. I owned the business case and GTM for both.",
     ],
   },
   {
     company: "Ola Electric",
-    role: "Strategy & Operations Planning",
+    role: "Founder’s Office – Strategy & Operations",
     period: "Jun 2025 – Jul 2026",
     location: "Bengaluru",
     summary: "Production planning, inventory and fulfilment, working with the CEO and COO.",
@@ -94,6 +94,25 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    name: "Outreach HQ",
+    period: "Nov 2026",
+    description:
+      "A six-agent outreach system for Survive and Conquer Foundation that sources leads, researches, drafts and follows up, with a live performance dashboard. It reached **900+** donors and sponsors across metro Atlanta, grew donations **10×** over the manual campaign, and cut daily staff effort from 5 hours to **30–40 minutes**.",
+    bullets: [
+      "Reached **900+** prospective donors and corporate sponsors across metro Atlanta, increasing donations by over **10×** versus the previous manual campaign through personalized pitches and optimized email scheduling.",
+      "Reduced daily staff effort by **87–90%**, from 5 hours to 30–40 minutes, with a six-agent outreach system that automates lead sourcing, research, drafting and follow-ups, backed by a live message-performance dashboard.",
+      "Designed it as a configurable platform reusable across fundraising, sales prospecting and job outreach, with customizable lead sources, targeting criteria and messaging; now building a self-service online donation portal.",
+    ],
+  },
+  {
+    name: "Daymark",
+    period: "Nov 2026",
+    description:
+      "A one-page countdown for a 426-day stretch: one dot per day, run and monthly goals, and a daily journal. No sign-in; everything stays in the browser.",
+    link: "https://daymark-smoky.vercel.app",
+    linkLabel: "Live",
+  },
   {
     name: "Alcheringa Ticketing System",
     period: "Jan – Feb 2024",
