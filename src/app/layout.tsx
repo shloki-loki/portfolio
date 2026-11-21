@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Tabs from "@/components/Tabs";
 import { profile } from "@/lib/content";
@@ -20,6 +21,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#main">Skip to content</a>
         <Tabs />
         <main id="main">{children}</main>
+        {/* Invisible visitor counting (Vercel Web Analytics); renders nothing on the page. */}
+        <Analytics />
       </body>
     </html>
   );

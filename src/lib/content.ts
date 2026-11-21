@@ -95,15 +95,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Outreach HQ",
+    name: "INDRA",
     period: "Nov 2026",
     description:
-      "A six-agent outreach system for Survive and Conquer Foundation that sources leads, researches, drafts and follows up, with a live performance dashboard. It reached **900+** donors and sponsors across metro Atlanta, grew donations **10×** over the manual campaign, and cut daily staff effort from 5 hours to **30–40 minutes**.",
-    bullets: [
-      "Reached **900+** prospective donors and corporate sponsors across metro Atlanta, increasing donations by over **10×** versus the previous manual campaign through personalized pitches and optimized email scheduling.",
-      "Reduced daily staff effort by **87–90%**, from 5 hours to 30–40 minutes, with a six-agent outreach system that automates lead sourcing, research, drafting and follow-ups, backed by a live message-performance dashboard.",
-      "Designed it as a configurable platform reusable across fundraising, sales prospecting and job outreach, with customizable lead sources, targeting criteria and messaging; now building a self-service online donation portal.",
-    ],
+      "My family’s rummy-style card game, rebuilt for the browser: two decks, wild 2s and a sealed 13-card Indra deck for whoever goes out first. A TypeScript rules engine with **67** tests, **4** computer levels up to a Monte Carlo Expert, and online rooms for 1v1 or 2v2 with chat, built on Cloudflare Durable Objects.",
+    link: "https://github.com/shloki-loki/indra",
+    linkLabel: "Source",
   },
   {
     name: "Daymark",
@@ -112,6 +109,17 @@ export const projects: Project[] = [
       "A one-page countdown for a 426-day stretch: one dot per day, run and monthly goals, and a daily journal. No sign-in; everything stays in the browser.",
     link: "https://daymark-smoky.vercel.app",
     linkLabel: "Live",
+  },
+  {
+    name: "Outreach HQ",
+    period: "Oct 2025",
+    description:
+      "A six-agent outreach system for Survive and Conquer Foundation, an NGO, that sources leads, researches, drafts and follows up, with a live performance dashboard. It reached **900+** donors and sponsors across metro Atlanta, grew donations **10×** over the manual campaign, and cut daily staff effort from 5 hours to **30–40 minutes**.",
+    bullets: [
+      "Reached **900+** prospective donors and corporate sponsors across metro Atlanta, increasing donations by over **10×** versus the previous manual campaign through personalized pitches and optimized email scheduling.",
+      "Reduced daily staff effort by **87–90%**, from 5 hours to 30–40 minutes, with a six-agent outreach system that automates lead sourcing, research, drafting and follow-ups, backed by a live message-performance dashboard.",
+      "Designed it as a configurable platform reusable across fundraising, sales prospecting and job outreach, with customizable lead sources, targeting criteria and messaging; now building a self-service online donation portal.",
+    ],
   },
   {
     name: "Alcheringa Ticketing System",
@@ -152,6 +160,7 @@ export const leadership = {
 };
 
 export const achievements = [
+  { year: "2026", text: "CBS Case Competition — top **10%** globally among 4,000+ participants from 100+ countries" },
   { year: "2024", text: "Amex Strategy Track — reached Level 4, top **2%** of 7,000+ candidates" },
   { year: "2023", text: "Flipkart Grid — reached Level 2, top **0.05%** of 400,000+ candidates" },
   { year: "2021", text: "JEE Advanced AIR **2135** · JEE Mains AIR **2828** among 1,000,000+ candidates" },
@@ -166,6 +175,6 @@ export const education = {
 };
 
 export const skills = [
-  { group: "Business", items: "SAP ERP (MM, PP), Ariba SSC, Excel, PowerPoint, SQL" },
+  { group: "Business", items: "SAP ERP (MM, PP), Ariba SSC, Excel, PowerPoint, SQL, Tableau" },
   { group: "Programming", items: "C++, C, Java, Python, Flask, HTML, CSS, JavaScript" },
 ];
