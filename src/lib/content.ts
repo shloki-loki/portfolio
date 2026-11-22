@@ -5,7 +5,7 @@ export const profile = {
   name: "Shlok Agrawal",
   title: "Strategy & Operations · Founder’s Office",
   tagline:
-    "I ran production planning and inventory at Ola Electric. I also write code.",
+    "IIT Guwahati engineer. I spent a year running inventory and production planning at Ola Electric.",
   email: "111shlokagrawal@gmail.com",
   location: "Bengaluru, India",
   availability: "Open to work",
