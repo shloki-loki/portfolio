@@ -5,7 +5,7 @@ export const profile = {
   name: "Shlok Agrawal",
   title: "Strategy & Operations · Founder’s Office",
   tagline:
-    "I turn messy operations into systems — inventory, supply chain and go-to-market — and write the code when spreadsheets aren’t enough.",
+    "I ran production planning and inventory at Ola Electric. I also write code.",
   email: "111shlokagrawal@gmail.com",
   location: "Bengaluru, India",
   availability: "Open to work",
@@ -44,17 +44,7 @@ export type Experience = {
 };
 
 export const experience: Experience[] = [
-  {
-    company: "Beltech Artificial Intelligence",
-    role: "Founder’s Office – Business Strategy",
-    period: "Aug 2026 – Sep 2026",
-    location: "Bengaluru",
-    summary: "Bid strategy and new revenue lines for a smart-traffic and surveillance company.",
-    bullets: [
-      "Owned the evaluation of central and state smart-traffic and surveillance tenders worth **₹80–800 Cr**, building the qualification framework and credentials repository behind every bid/no-bid and consortium call.",
-      "Launched **2 new revenue streams** beyond core government contracts: GPU colocation, and an insurance intelligence product that turns vehicle and violation data into automated leads. I owned the business case and GTM for both.",
-    ],
-  },
+  // Order is deliberate: Ola first, though Beltech is more recent.
   {
     company: "Ola Electric",
     role: "Founder’s Office – Strategy & Operations",
@@ -69,6 +59,17 @@ export const experience: Experience[] = [
       "Owned finished-goods inventory end-to-end with the COO and CEO; designed first-mile milk-run routes that lifted truck utilisation **45%** and cut logistics spend **34%**.",
       "Led a pan-India rebalancing of non-moving stock based on daily run rate, unlocking **27%** working capital and cutting outstanding logistics cost **37%**.",
       "Drove production planning for Bharat Cell (4680) and Shakti (BESS) around supplier lead times, MOQs and yield; cell yield rose from **42% to 67%** in 2 months.",
+    ],
+  },
+  {
+    company: "Beltech Artificial Intelligence",
+    role: "Founder’s Office – Business Strategy",
+    period: "Aug 2026 – Oct 2026",
+    location: "Bengaluru",
+    summary: "Bid strategy and new revenue lines for a smart-traffic and surveillance company.",
+    bullets: [
+      "Owned the evaluation of central and state smart-traffic and surveillance tenders worth **₹80–800 Cr**, building the qualification framework and credentials repository behind every bid/no-bid and consortium call.",
+      "Launched **2 new revenue streams** beyond core government contracts: GPU colocation, and an insurance intelligence product that turns vehicle and violation data into automated leads. I owned the business case and GTM for both.",
     ],
   },
   {
@@ -99,8 +100,8 @@ export const projects: Project[] = [
     period: "Nov 2026",
     description:
       "My family’s rummy-style card game, rebuilt for the browser: two decks, wild 2s and a sealed 13-card Indra deck for whoever goes out first. A TypeScript rules engine with **67** tests, **4** computer levels up to a Monte Carlo Expert, and online rooms for 1v1 or 2v2 with chat, built on Cloudflare Durable Objects.",
-    link: "https://github.com/shloki-loki/indra",
-    linkLabel: "Source",
+    link: "https://indra.indra-server.workers.dev",
+    linkLabel: "Play",
   },
   {
     name: "Daymark",
